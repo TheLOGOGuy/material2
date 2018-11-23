@@ -22,7 +22,9 @@
     "webdriver-manager": "webdriver-manager",
     "docs": "gulp docs",
     "api": "gulp api-docs",
-    "breaking-changes": "gulp breaking-changes"
+    "breaking-changes": "gulp breaking-changes",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "version": "7.0.0-rc.0",
   "requiredAngularVersion": ">=7.0.0-rc.0",
@@ -40,7 +42,8 @@
     "systemjs": "0.19.43",
     "tsickle": "^0.32.0",
     "tslib": "^1.9.3",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "snyk": "^1.110.2"
   },
   "devDependencies": {
     "@angular-devkit/core": "7.0.0-rc.1",
@@ -78,12 +81,12 @@
     "dgeni-packages": "^0.26.9",
     "firebase": "^5.5.2",
     "firebase-admin": "^5.0.0",
-    "firebase-tools": "^4.1.0",
+    "firebase-tools": "^4.2.1",
     "fs-extra": "^3.0.1",
     "git-semver-tags": "^2.0.0",
     "glob": "^7.1.2",
     "google-closure-compiler": "20170409.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^3.3.1",
     "gulp-cli": "^2.0.1",
@@ -128,12 +131,13 @@
     "scss-bundle": "^2.0.1-beta.7",
     "selenium-webdriver": "^3.6.0",
     "sorcery": "^0.10.0",
-    "stylelint": "^9.5.0",
+    "stylelint": "^9.8.0",
     "ts-node": "^3.0.4",
     "tsconfig-paths": "^2.3.0",
     "tslint": "^5.11.0",
     "tsutils": "^3.0.0",
     "typescript": "^3.1.1",
     "uglify-js": "^2.8.14"
-  }
+  },
+  "snyk": true
 }
